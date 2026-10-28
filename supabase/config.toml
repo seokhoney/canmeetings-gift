@@ -1,0 +1,5 @@
+[functions.gift-pin-verify]
+verify_jwt = false
+
+[functions.gift-pin-confirm]
+verify_jwt = false
