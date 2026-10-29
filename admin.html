@@ -1,12 +1,16 @@
 <!doctype html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>캔미팅 | 선물 운영 관리</title>
 <style>
 :root{font-family:system-ui,-apple-system,'Pretendard','Noto Sans KR',sans-serif;color:#1f3044;background:#f5f7fb;font-size:14px}*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}a{color:#3166b3}.hidden{display:none!important}.wrap{max-width:1380px;margin:auto;padding:26px 20px 70px}.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-bottom:24px}.top h1{margin:5px 0;font-size:27px}.muted{color:#69788e}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.1em;color:#57739a}.actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.btn{background:#fff;border:1px solid #d4dfec;border-radius:10px;padding:10px 13px;font-weight:700;color:#30445d}.btn.primary{background:#25558f;color:white;border-color:#25558f}.btn.danger{background:#fff5f5;border-color:#f4c4c4;color:#ac3737}.btn:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #94bcfb}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:18px}.stat{background:white;border:1px solid #e0e7f0;border-radius:16px;padding:18px}.stat .num{font-weight:850;font-size:26px;margin-top:8px}.box{background:white;border:1px solid #dfe6ef;border-radius:16px;padding:18px;margin-bottom:16px;box-shadow:0 4px 14px #18375608}.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.tools input,.tools select,.form input,.form select{padding:11px;border:1px solid #d0dbe8;border-radius:9px;background:white;min-width:0}.tools input{min-width:210px;flex:1}.tabbar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:15px}.tab{padding:11px 18px;border:0;background:#eaf0f8;color:#435d7c;border-radius:11px;font-weight:800}.tab.active{background:#24558f;color:white}.scroller{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:720px}th,td{padding:12px 10px;text-align:left;border-bottom:1px solid #edf1f6;vertical-align:middle}th{font-size:12px;background:#f8fafc;color:#5b6d83;white-space:nowrap}tbody tr:hover{background:#fbfcff}.right{text-align:right}.tag{display:inline-block;background:#eaf5ef;color:#15704f;padding:5px 9px;border-radius:30px;font-size:12px;font-weight:700}.tag.cancelled{background:#f1f1f1;color:#677285}.rowbuttons{display:flex;gap:5px;justify-content:flex-end}.sm{padding:7px 10px;font-size:12px}.empty{padding:35px;text-align:center;color:#6a7a90}.status{font-size:12px;color:#7788a0}#notice{display:none;border-radius:10px;padding:12px;margin-bottom:12px;background:#eaf5ff;color:#205189;white-space:pre-wrap}#notice.error{background:#fff0f0;color:#a62f36}.modal{position:fixed;inset:0;background:#102032a8;display:flex;align-items:center;justify-content:center;padding:15px;z-index:5000}.dialog{width:min(700px,100%);max-height:92vh;overflow-y:auto;background:white;border-radius:18px;padding:23px;box-shadow:0 24px 80px #0004}.dialoghead{display:flex;justify-content:space-between;align-items:center}.dialog h2{margin:0 0 6px}.form{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:18px 0}.form label{font-weight:750;font-size:12px;display:block;margin-bottom:6px}.form input,.form select{width:100%}.productedit{border:1px solid #e0e8f2;border-radius:12px;max-height:260px;overflow:auto}.productrow{padding:10px 12px;display:flex;gap:10px;align-items:center;border-bottom:1px solid #edf1f6}.productrow .desc{flex:1;min-width:0;overflow-wrap:anywhere}.qty{display:flex;gap:5px;align-items:center}.qty button{border:1px solid #d2e0ef;border-radius:6px;background:#f7faff;min-width:30px;padding:5px}.adder{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.adder input{flex:1;min-width:170px;padding:10px;border:1px solid #d5e0ee;border-radius:9px}.results{max-height:175px;overflow:auto;border:1px solid #dfe5ee;border-radius:9px}.results button{width:100%;text-align:left;background:white;border:0;border-bottom:1px solid #edf0f5;padding:9px}.results button:hover{background:#f1f6fd}.summaryline{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:14px 0;font-weight:800}.dialogfooter{display:flex;gap:8px;justify-content:flex-end;margin-top:16px}.auth{max-width:440px;margin:10vh auto 0}.auth h2{margin-top:0}.auth label{display:block;margin:13px 0 5px;font-weight:750}.auth input{width:100%;padding:12px;border:1px solid #d4deea;border-radius:9px}.auth button{margin-top:15px;width:100%}.hint{font-size:12px;color:#75839a;line-height:1.6}.titleline{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.warning{background:#fff6e7;border:1px solid #f1dbb4;padding:12px;border-radius:10px;color:#7d5c19}@media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}.wrap{padding:17px 12px}.form{grid-template-columns:1fr}.top h1{font-size:23px}}
+@media print{body{background:#fff!important}.wrap{display:none!important}#ticketPrintArea{display:block!important}}
 </style></head><body>
 <div class="wrap"><header class="top"><div><div class="eyebrow">CAN MEETING · OPERATIONS</div><h1>선물 선택 관리자</h1><div class="muted">수상자별 내역 · 상품 수량 · 예산 집계</div></div><div id="topButtons" class="actions hidden"><span class="status" id="operatorLabel"></span><button class="btn" id="refresh">새로고침</button><button class="btn" id="downloadRows">선택내역 CSV</button><button class="btn primary" id="downloadSummary">구매목록 CSV</button><button class="btn" id="logout">로그아웃</button></div></header>
 <div id="notice" role="alert"></div>
 <div id="loginView" class="box auth"><h2>관리자 로그인</h2><p class="muted">선물 선택 화면과 동일한 Supabase 운영자 계정으로 로그인하세요.</p><label for="email">이메일</label><input id="email" type="email" autocomplete="username" placeholder="운영자 이메일"><label for="password">비밀번호</label><input id="password" type="password" autocomplete="current-password" placeholder="비밀번호"><button class="btn primary" id="login">로그인</button><p class="hint">admin.html의 SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY를 기존 index.html과 똑같이 입력해야 합니다.</p></div>
 <div id="dashboard" class="hidden"><div class="box" id="pinPanel"><h2>🎫 수상 건별 PIN 발급·관리</h2><p class="muted">PIN은 발급 순간에만 표시됩니다. 전달 전 반드시 복사해두세요. 같은 사람이 여러 상을 받으면 시상 건마다 개별 발급하세요.</p>
  <div class="tools"><select id="pinAward"></select><input id="pinRecipient" placeholder="수상자 이름(선택 · 나중에 입력 가능)"><button class="btn primary" id="issuePin">고유 PIN 발급</button><button class="btn" id="refreshPins">발급 내역 새로고침</button></div>
+ <div class="tools" style="margin:12px 0"><label for="batchQty"><b>일괄 발급 수량</b></label><input id="batchQty" type="number" min="1" max="30" value="5" style="width:85px;min-width:85px;flex:none"><button class="btn primary" id="issueBatch">선택 시상 PIN 일괄 발급</button><button class="btn" id="printBatch" disabled>발급된 PIN 상품권 인쇄</button><button class="btn" id="downloadBatch" disabled>발급된 PIN CSV 백업</button><button class="btn danger" id="clearBatch" disabled>화면에서 PIN 지우기</button></div>
+ <p class="hint">동일한 시상 종류로 여러 PIN을 발급합니다. 발급된 PIN 원문은 이 브라우저 탭에서만 임시 보관하며, 새로고침하면 복구할 수 없습니다. 발급 직후 인쇄하거나 CSV로 안전하게 보관해 주세요. 실제 사용 전 테스트용 발급 건과 구분하세요.</p>
+ <p id="batchStatus" class="muted" role="status"></p>
  <p id="pinIssued" style="font-size:17px;font-weight:700;color:#144f87;white-space:pre-wrap"></p>
  <div class="scroller"><table><thead><tr><th>수상자(등록명)</th><th>시상</th><th>상태</th><th>발급 일시</th><th>선택 확정</th><th>관리</th></tr></thead><tbody id="pinRows"></tbody></table></div>
  <p class="hint">기존 선택을 취소해도 사용한 PIN은 자동 복구되지 않습니다. 필요하면 새 PIN을 발급하세요.</p>
@@ -15,7 +19,7 @@
 <div class="box"><div class="tabbar"><button class="tab active" data-tab="selections">수상자별 선택내역</button><button class="tab" data-tab="products">상품별 구매 수량</button></div><div id="selectionsView" class="scroller"><table><thead><tr><th>수상자</th><th>시상</th><th>선택 상품</th><th class="right">총금액</th><th>상태</th><th>선택 시각</th><th class="right">관리</th></tr></thead><tbody id="selectionsBody"></tbody></table></div><div id="productsView" class="scroller hidden"><table><thead><tr><th>브랜드</th><th>상품명</th><th>상품번호</th><th class="right">수량</th><th class="right">단가</th><th class="right">총액</th></tr></thead><tbody id="productsBody"></tbody></table></div></div>
 <div class="hint">취소 건은 집계에서 제외되며 DB에는 기록이 남습니다. 관리자 화면의 수정 금액은 상품 마스터 할인가로 계산합니다. 실제 최종 구매 전에 기프티쇼 가격을 다시 확인하세요.</div></div></div>
 <div id="editModal" class="modal hidden" role="dialog" aria-modal="true" aria-label="선택내역 수정"><div class="dialog"><div class="dialoghead"><div><h2>선택 내역 수정</h2><div class="muted">저장 시 기존 선택내역을 갱신합니다</div></div><button class="btn sm" id="closeEdit">닫기</button></div><div class="form"><div><label for="editWinner">수상자 이름</label><input id="editWinner"></div><div><label for="editAward">시상 종류</label><select id="editAward"></select></div></div><div class="titleline"><b>선택 상품</b><span class="hint">+ / − 버튼으로 수량을 변경할 수 있습니다.</span></div><div class="productedit" id="editItems"></div><div class="adder"><input id="productQuery" placeholder="추가할 상품명/브랜드/상품번호 검색"><button class="btn sm" id="searchProduct">상품 검색</button></div><div class="results hidden" id="productResults"></div><div class="summaryline"><span id="editCount"></span><span id="editTotal"></span></div><div id="editWarning" class="warning hidden"></div><div class="dialogfooter"><button class="btn" id="cancelEdit">취소</button><button class="btn primary" id="saveEdit">변경사항 저장</button></div></div></div>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="./js/config.js"></script><script>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="./js/config.js"></script><script>
 // index.html에 입력했던 값과 동일하게 설정하세요.
 const { SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY } = window.APP_CONFIG;
 let PRODUCTS = [];
@@ -62,6 +66,61 @@ async function toggleStatus(id){const r=records.find(v=>v.id===id);if(!r)return;
 $('selectionsBody').onclick=e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.edit)openEdit(b.dataset.edit);if(b.dataset.toggle)toggleStatus(b.dataset.toggle);};
 $('filterAward').innerHTML+=[...AWARDS].map(a=>`<option value="${esc(a.id)}">${esc(a.name)}</option>`).join('');$('editAward').innerHTML=AWARDS.map(a=>`<option value="${esc(a.id)}">${esc(a.name)}</option>`).join('');
 $('pinAward').innerHTML=AWARDS.map(a=>`<option value="${esc(a.id)}">${esc(a.name)} · ${money(a.limit)}</option>`).join('');
+let freshlyIssued = []; // PIN 원문은 탭의 메모리에만 보유. DB는 해시만 저장.
+let issuingBatch = false;
+const SELECT_URL = new URL('./index.html', location.href).href;
+function updatePrintControls(){
+  const have=freshlyIssued.length>0;
+  for(const id of ['printBatch','downloadBatch','clearBatch'])$(id).disabled=!have||issuingBatch;
+  $('batchStatus').textContent=have?`현재 탭에서 발급한 PIN ${freshlyIssued.length}건 · 재조회 불가 · 인쇄/백업 후 페이지를 닫아 주세요.`:'현재 탭에 인쇄 대기 중인 PIN이 없습니다.';
+}
+function retainIssued(awardId,pin,recipient){
+  const a=AWARDS.find(x=>x.id===awardId);
+  freshlyIssued.push({pin,awardId,awardName:a?.name||awardId,recipient:recipient||'',issuedAt:new Date().toISOString()});
+  updatePrintControls();
+}
+$('issueBatch').onclick=async()=>{
+  if(issuingBatch)return;
+  const awardId=$('pinAward').value, qty=Number($('batchQty').value);
+  if(!Number.isInteger(qty)||qty<1||qty>30){notify('한 번에 1~30건만 발급할 수 있습니다.',true);return;}
+  const label=AWARDS.find(a=>a.id===awardId)?.name||awardId;
+  if(!confirm(`${label} PIN을 ${qty}건 발급할까요? PIN은 DB에서 다시 볼 수 없으므로 발급 후 바로 인쇄하세요.`))return;
+  issuingBatch=true;
+  $('issueBatch').disabled=true;$('issuePin').disabled=true;updatePrintControls();
+  let ok=0;
+  try {
+    for(let i=0;i<qty;i++){
+      const pin=generatePin();
+      const {error}=await db.rpc('admin_issue_gift_pin',{p_award_id:awardId,p_pin:pin,p_recipient_name:null});
+      if(error)throw new Error(`${i+1}번째 발급 실패: ${error.message}`);
+      retainIssued(awardId,pin,'');ok++;
+      $('batchStatus').textContent=`${qty}건 중 ${ok}건 발급 완료…`;
+    }
+    notify(`${label} ${ok}건 발급 완료. 지금 상품권을 인쇄하거나 CSV로 백업하세요.`);
+  }catch(e){notify(`일괄 발급 중단: ${e.message}. 성공한 ${ok}건은 인쇄할 수 있습니다.`,true);}
+  finally{issuingBatch=false;$('issueBatch').disabled=false;$('issuePin').disabled=false;updatePrintControls();await loadPins();}
+};
+$('clearBatch').onclick=()=>{if(!confirm('현재 탭에 남아 있는 PIN 원문을 지울까요? DB에는 해시만 있어 다시 복원할 수 없습니다. 인쇄 또는 백업 여부를 확인하세요.'))return;freshlyIssued=[];updatePrintControls();};
+$('downloadBatch').onclick=()=>{
+  if(!freshlyIssued.length)return;
+  csvDownload('canmeeting-issued-pins.csv',['시상ID','시상명','수상자','PIN','발급시각','접속URL'],freshlyIssued.map(x=>[x.awardId,x.awardName,x.recipient,x.pin,x.issuedAt,SELECT_URL]));
+  notify('PIN 원문이 담긴 CSV가 저장되었습니다. 비공개 장소에서만 보관하고 배포 후 삭제하세요.');
+};
+function buildPrintableHtml(tickets){
+ const style=`@page{size:A4 portrait;margin:11mm}*{box-sizing:border-box}body{margin:0;font-family:Arial,'Malgun Gothic',sans-serif;color:#111;background:#efefef}.bar{padding:12px 20px;background:#333;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:12px}.bar button{background:#fff;border:1px solid #555;padding:10px 16px;border-radius:8px;font-weight:bold;cursor:pointer;color:#111}.sheet{width:210mm;min-height:297mm;background:#fff;margin:14px auto;padding:11mm;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(2,1fr);gap:7mm;page-break-after:always}.card{position:relative;border:1.8px solid #444;border-radius:15px;padding:15px 13px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(150deg,#fff 0%,#fff 70%,#f2f2f2 100%);min-width:0}.card:after{content:'★';color:#d9d9d9;position:absolute;right:10px;top:3px;font-size:52px;z-index:0}.card>div{z-index:1}.eyebrow{font-size:10px;color:#555;font-weight:800;letter-spacing:.08em}.headline{font-size:18px;font-weight:900;margin-top:5px;color:#111}.awardLabel{font-size:11px;font-weight:bold;color:#555;margin-top:10px}.award{font-size:20px;font-weight:900;line-height:1.3;min-height:53px;word-break:keep-all;color:#111}.recipient{font-size:11px;color:#666;margin-bottom:8px}.pinBox{border:1px solid #777;border-radius:8px;background:#f6f6f6;padding:10px 8px;text-align:center}.pinLabel{font-size:10px;color:#555}.pinText{font-size:22px;letter-spacing:1.1px;font-weight:900;overflow-wrap:anywhere;color:#111}.foot{display:flex;align-items:center;justify-content:space-between;gap:9px;margin-top:12px}.qr{width:92px;height:92px;flex-shrink:0}.instructions{font-size:10px;line-height:1.8;color:#333}.note{border-top:1px solid #d0d0d0;margin-top:9px;padding-top:7px;font-size:9px;color:#555}@media print{body{background:#fff}.bar{display:none}.sheet{margin:0;min-height:275mm;width:auto;padding:0}.sheet:last-child{page-break-after:auto}.card{break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}}`;
+ const cards=tickets.map((x,i)=>`<article class="card"><div><div class="eyebrow">CAN MEETING · GIFT VOUCHER</div><div class="headline">캔미팅 경품 선택권</div><div class="awardLabel">시상명</div><div class="award">${esc(x.awardName)}</div><div class="recipient">${x.recipient?'수상자: '+esc(x.recipient):'수상자: __________________'}</div><div class="pinBox"><div class="pinLabel">ONE-TIME PIN</div><div class="pinText">${esc(x.pin)}</div></div></div><div><div class="foot"><div class="instructions">① QR코드로 접속<br>② PIN 입력<br>③ 원하는 선물 선택 후 확정</div><div class="qr" id="qr-${i}"></div></div><div class="note">1회 사용 가능 · 최종 확정 후 변경은 TF 문의<br>PIN 타인 공유 금지 / 실제 시상 내역 검수 후 지급</div></div></article>`);
+ const pages=[];for(let i=0;i<cards.length;i+=4)pages.push(`<section class="sheet">${cards.slice(i,i+4).join('')}</section>`);
+ // QR에는 공통 웹사이트 URL만 포함하고 개인별 PIN은 넣지 않음.
+ return `<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>캔미팅 선택권 인쇄</title><style>${style}</style></head><body><div class="bar"><span>캔미팅 상품권 ${tickets.length}매 · A4 1장당 4매</span><button onclick="window.print()">인쇄 / PDF 저장</button></div>${pages.join('')}<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"><\/script><script>window.addEventListener('load',()=>{if(!window.QRCode){alert('QR 생성 라이브러리를 불러오지 못했습니다. 인터넷 연결을 확인해 주세요.');return;}for(let i=0;i<${tickets.length};i++){new QRCode(document.getElementById('qr-'+i),{text:${JSON.stringify(SELECT_URL)},width:92,height:92,correctLevel:QRCode.CorrectLevel.M});}});<\/script></body></html>`;
+}
+$('printBatch').onclick=()=>{
+ if(!freshlyIssued.length)return;
+ const popup=window.open('','_blank');
+ if(!popup){notify('팝업이 차단되었습니다. 이 사이트의 팝업을 허용해 주세요.',true);return;}
+ popup.document.open();popup.document.write(buildPrintableHtml(freshlyIssued));popup.document.close();
+};
+window.addEventListener('beforeunload',e=>{if(freshlyIssued.length){e.preventDefault();e.returnValue='';}});
+updatePrintControls();
 let issuedPins=[];
 function generatePin(){const bytes=new Uint8Array(12);crypto.getRandomValues(bytes);const alphabet='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';return Array.from(bytes,b=>alphabet[b%alphabet.length]).join('');}
 async function loadPins(){
@@ -73,6 +132,7 @@ async function loadPins(){
 $('issuePin').onclick=async()=>{
  const aw=$('pinAward').value,who=$('pinRecipient').value.trim(),pin=generatePin(),b=$('issuePin');b.disabled=true;
  try{const {data,error}=await db.rpc('admin_issue_gift_pin',{p_award_id:aw,p_pin:pin,p_recipient_name:who||null});if(error)throw error;
+ retainIssued(aw,pin,who);
  $('pinIssued').textContent=`새 PIN: ${pin}\n시상: ${AWARDS.find(a=>a.id===aw)?.name}\n수상자: ${who||'현장에서 입력'}\n※ 이 PIN은 다시 조회할 수 없습니다. 지금 복사해 전달하세요.`;
  await loadPins();
  }catch(e){notify('PIN 발급 실패: '+e.message,true);}finally{b.disabled=false;}
