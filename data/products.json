@@ -1890,24 +1890,6 @@
     "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=59987"
   },
   {
-    "id": "68077",
-    "category": "치킨",
-    "brand": "롯데리아",
-    "name": "후라이드 순살치킨 L (라지)",
-    "price": 17480,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2026/45a8d04e66f44b07a117247e444e9ed4_w274.jpg",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=68077"
-  },
-  {
-    "id": "68080",
-    "category": "치킨",
-    "brand": "롯데리아",
-    "name": "후라이드 순살치킨 R (레귤러)",
-    "price": 10620,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2026/ec8183cc30bf480fa9f67fd605cf5736_w274.jpg",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=68080"
-  },
-  {
     "id": "54415",
     "category": "치킨",
     "brand": "맘스터치",
@@ -4995,105 +4977,6 @@
     "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=65266"
   },
   {
-    "id": "66856",
-    "category": "햄버거·패스트푸드",
-    "brand": "롯데리아",
-    "name": "더블 한우불고기버거",
-    "price": 12400,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2026/cf98bedcd4fb42868d4ad38290d083e5_w274.jpg",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=66856"
-  },
-  {
-    "id": "66855",
-    "category": "햄버거·패스트푸드",
-    "brand": "롯데리아",
-    "name": "더블 한우불고기버거 세트",
-    "price": 14280,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2026/76cb6bf84c9c42fc96e023a3f70570eb_w274.jpg",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=66855"
-  },
-  {
-    "id": "66854",
-    "category": "햄버거·패스트푸드",
-    "brand": "롯데리아",
-    "name": "더블 한우불고기버거 콤보",
-    "price": 13630,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2026/bec77634148a4cd8911562d36627d017_w274.jpg",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=66854"
-  },
-  {
-    "id": "66851",
-    "category": "햄버거·패스트푸드",
-    "brand": "롯데리아",
-    "name": "더블엑스투버거 세트",
-    "price": 8930,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2026/8444fdf4e3064321a80a360b86cef03d_w274.jpg",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=66851"
-  },
-  {
-    "id": "66898",
-    "category": "햄버거·패스트푸드",
-    "brand": "롯데리아",
-    "name": "리아 불고기 더블(빅불) 세트",
-    "price": 9210,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2026/ee5566342f40450f9a8272b3b1959168_w274.jpg",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=66898"
-  },
-  {
-    "id": "66841",
-    "category": "햄버거·패스트푸드",
-    "brand": "롯데리아",
-    "name": "모짜렐라인더버거 베이컨 세트",
-    "price": 9680,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2026/d5382a3d2ce442bf8be3e783e8767aff_w274.jpg",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=66841"
-  },
-  {
-    "id": "66827",
-    "category": "햄버거·패스트푸드",
-    "brand": "롯데리아",
-    "name": "한우명품팩",
-    "price": 17670,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2026/86d128d3428a4e01bcb81870753c4be8_w274.jpg",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=66827"
-  },
-  {
-    "id": "66929",
-    "category": "햄버거·패스트푸드",
-    "brand": "롯데리아",
-    "name": "한우불고기버거",
-    "price": 8640,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2026/e488324b4026473eb9d145fce4b58367_w274.jpg",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=66929"
-  },
-  {
-    "id": "66927",
-    "category": "햄버거·패스트푸드",
-    "brand": "롯데리아",
-    "name": "한우불고기버거 세트",
-    "price": 10520,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2026/0f97ef5c99c14830a0c96c3d9476b4ab_w274.jpg",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=66927"
-  },
-  {
-    "id": "66925",
-    "category": "햄버거·패스트푸드",
-    "brand": "롯데리아",
-    "name": "한우불고기버거 콤보",
-    "price": 9870,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2026/f297b815510d416a88b583788ea26ba1_w274.jpg",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=66925"
-  },
-  {
-    "id": "66923",
-    "category": "햄버거·패스트푸드",
-    "brand": "롯데리아",
-    "name": "한우연인팩",
-    "price": 15980,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2026/c76be53dfa7744e1a223387f2a89b949_w274.jpg",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=66923"
-  },
-  {
     "id": "68987",
     "category": "햄버거·패스트푸드",
     "brand": "맘스터치",
@@ -5380,15 +5263,6 @@
     "price": 21340,
     "image": "https://bizimg.giftishow.com/Resource/goods/2026/742b5a3694424f27b03b16538b008330_w274.png",
     "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=65415"
-  },
-  {
-    "id": "66887",
-    "category": "햄버거·패스트푸드",
-    "brand": "롯데리아",
-    "name": "핫크리스피치킨버거 세트",
-    "price": 8080,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2026/c1486b9874a74b21bad8d12ce5f1bdb4_w274.jpg",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=66887"
   },
   {
     "id": "43937",
@@ -9106,33 +8980,6 @@
     "price": 10920,
     "image": "https://bizimg.giftishow.com/Resource/goods/2025/G00005200929/G00005200929_w274.jpg",
     "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=69498"
-  },
-  {
-    "id": "53514",
-    "category": "문화·취향선물",
-    "brand": "롯데시네마",
-    "name": "롯데시네마 2D 1인 영화관람권",
-    "price": 12220,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2024/G00003061244/G00003061244_w274.jpg",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=53514"
-  },
-  {
-    "id": "53516",
-    "category": "문화·취향선물",
-    "brand": "롯데시네마",
-    "name": "롯데시네마 2D 2인 영화관람권",
-    "price": 24440,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2024/G00003061245/G00003061245_w274.png",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=53516"
-  },
-  {
-    "id": "61417",
-    "category": "문화·취향선물",
-    "brand": "롯데시네마",
-    "name": "롯데시네마 더블콤보",
-    "price": 15880,
-    "image": "https://bizimg.giftishow.com/Resource/goods/2025/G00004431062/G00004431062_w274.jpg",
-    "url": "https://biz.giftishow.com/ggoods/detail?goodsNo=61417"
   },
   {
     "id": "60197",
